@@ -1,0 +1,78 @@
+/* Colores de la marca: Verdes y tonos tierra */
+:root {
+    --verde-organico: #4A5D23;
+    --dorado-miel: #DAA520;
+    --marron-tierra: #5C4033;
+    --fondo: #FDFBF7;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--fondo);
+    color: var(--marron-tierra);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--verde-organico);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.producto {
+    background-color: white;
+    border: 1px solid #e0d8c3;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    background-color: #eee; /* Fondo temporal por si no hay imagen */
+}
+
+.precio {
+    font-size: 1.5rem;
+    color: var(--verde-organico);
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--dorado-miel);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #b8860b;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--marron-tierra);
+    color: white;
+    margin-top: 40px;
+}
